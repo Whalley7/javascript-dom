@@ -8,19 +8,6 @@
     gap: 0.6em;
 }
 
-.wrapper {
-    box-sizing: content-box;
-    width: 450px;
-    
-    background-color: #ffffff;
-    position: absolute;
-    text-align: center;
-    transform: translate(-50%, -50%);
-    left: 80%;
-    top: 75%;
-    border-radius: 0.6em;
-    box-shadow: 0 0.9em 2.8em rgba(86, 66, 0, 0.2);
-  }
 
   #result {
     text-align: center;

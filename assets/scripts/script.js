@@ -1,8 +1,6 @@
 
 
-/*javascript settings for memory game */
-var c = document.getElementById("myCanvas");
-var ctx = c.getContext("2d");
+
 
 /* audio feedback on completing the game*/
 function play() {
@@ -13,58 +11,58 @@ function play() {
   /*card array for images*/
 const cardArray = [
 
-    {
-        name: 'cheeseburger',
-        img: 'assets/images/cheeseburger.png'
-    },
-    {
-        name: 'cheeseburger',
-        img: 'assets/images/cheeseburger.png'
-    },
     
     {
-        name: 'milkshake',
-        img: 'assets/images/milkshake.png'
+        name: 'surfing',
+        img: 'assets/images/surfing.png'
     },
     {
-        name: 'milkshake',
-        img: 'assets/images/milkshake.png'
-    },
-    {
-        name: 'fries',
-        img: 'assets/images/fries.png'
-    },
-    {
-        name: 'fries',
-        img: 'assets/images/fries.png'
+        name: 'surfing',
+        img: 'assets/images/surfing.png'
     },
    
     {
-        name: 'hotdog',
-        img: 'assets/images/hotdog.png'
+        name: 'weight-lifting',
+        img: 'assets/images/weight-lifing.png'
     },
     {
-        name: 'hotdog',
-        img: 'assets/images/hotdog.png'
+        name: 'weight-lifting',
+        img: 'assets/images/weight-lifting.png'
     },
     {
-        name: 'ice-cream',
-        img: 'assets/images/ice-cream.png'
+        name: 'skiing',
+        img: 'assets/images/skiing.png'
     },
     {
-        name: 'ice-cream',
-        img: 'assets/images/ice-cream.png'
+        name: 'skiing',
+        img: 'assets/images/skiing.png'
     },
     
     {
-        name: 'pizza',
-        img: 'assets/images/pizza.png'
-    },{
-        name: 'pizza',
-        img: 'assets/images/pizza.png'
+        name: 'running',
+        img: 'assets/images/running.png'
+    },
+    {
+        name: 'running',
+        img: 'assets/images/running.png'
+    },
+    {
+        name: 'swiming',
+        img: 'assets/images/swiming.png'
+    },
+    {
+        name: 'swiming',
+        img: 'assets/images/swiming.png'
+    },
+    {
+        name: 'rowing',
+        img: 'assets/images/rowing.png'
+    },
+    {
+        name: 'rowing',
+        img: 'assets/images/rowing.png'
     },
     
-   
 ];
 
 
@@ -90,7 +88,7 @@ moves.innerHTML = movesCount;
     cardsChosenIds.push(cardId)
     this.setAttribute('src', cardArray[cardId].img)
     if (cardsChosen.length === 2) {
-        setTimeout(checkMatch, 50);
+        setTimeout(checkMatch, 100);
     }
 }
 /*dispaying how many moves user has taken*/
@@ -109,7 +107,7 @@ function createBoard() {
         card.addEventListener('click', flipCard);
         gridDisplay.append(card);
     }
-    gridDisplay.style.gridTemplateColumns = `repeat(${size},auto)`;
+    
 }
 //For timer
 const timeGenerator = () => {
