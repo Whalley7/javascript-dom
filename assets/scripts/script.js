@@ -23,7 +23,7 @@ const cardArray = [
    
     {
         name: 'weight-lifting',
-        img: 'assets/images/weight-lifing.png'
+        img: 'assets/images/weight-lifting.png'
     },
     {
         name: 'weight-lifting',
